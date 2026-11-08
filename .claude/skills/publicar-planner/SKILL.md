@@ -12,5 +12,5 @@ Siga na ordem. Pare e avise se algum passo falhar.
 2. **Testar:** chame o agente `testador-celular`. Se ele não responder "ok", corrija antes de seguir. Se a mudança mexeu em conta ou texto, chame também o `revisor-de-contas`.
 3. **Link do Claude:** publique com a ferramenta Artifact. Use `file_path` = `src/planner.html` e `url` = `https://claude.ai/artifact/LSDFFmNpcFAFiPDgRR7NuP`, com uma `description` de uma frase. Se a publicação disser que não leu o link nesta conversa, faça antes `action: "read"` nessa url.
 4. **Git:** faça um commit com o que mudou, em português e no padrão do repositório.
-5. **GitHub Pages** (só se `git remote -v` mostrar um `origin`): `git push`. O site atualiza em 1 ou 2 minutos.
+5. **GitHub Pages:** `git push`. O site https://alexandreoliverbr-arch.github.io/planner-de-bolso/ atualiza em 1 ou 2 minutos. O `gh` fica em `C:\Program Files\GitHub CLI\gh.exe` (fora do PATH do bash). Antes de enviar, confira que `git config user.email` é o e-mail noreply do GitHub.
 6. **Contar ao Alexandre** onde ficou cada coisa e o que mudou para quem usa, em linguagem simples. Lembre que os dados de quem já usa continuam no celular de cada pessoa: uma versão nova não apaga nada.

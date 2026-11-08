@@ -5,6 +5,8 @@ App de finanças pessoais para celular, feito pelo Alexandre para uma amiga, par
 ## Onde está cada coisa
 - `src/planner.html`: o app inteiro (HTML + CSS + JS num arquivo só, sem biblioteca). Está no formato do link do Claude: sem `<html>`, `<head>` nem `<body>`. **É o único arquivo que se edita.**
 - `build.py`: gera `docs/index.html`, a versão independente que abre em qualquer navegador e que o GitHub Pages serve. `python build.py --downloads` também copia para `Downloads/planner-de-bolso/` (para mandar no WhatsApp).
+- **Site público (link pra mandar pras pessoas):** https://alexandreoliverbr-arch.github.io/planner-de-bolso/. Ele é servido pelo GitHub Pages a partir de `docs/` na branch `main` do repositório https://github.com/alexandreoliverbr-arch/planner-de-bolso (conta pessoal do Alexandre). Cada `git push` atualiza o site em 1 ou 2 minutos.
+- Git deste projeto usa o e-mail privado do GitHub (`...@users.noreply.github.com`), configurado só nesta pasta. Nunca o e-mail da Cubbo.
 - Link do Claude (privado até ele compartilhar): https://claude.ai/artifact/LSDFFmNpcFAFiPDgRR7NuP. Para republicar, use a skill `/publicar-planner`.
 - Teste local: `.claude/launch.json` → preview `planner` (porta 8812, serve `docs/`).
 
