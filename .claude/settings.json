@@ -1,0 +1,32 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": ["-I", "C:/Users/alexa/planner-de-bolso/.claude/hooks/sem_dados_pessoais.py"],
+            "timeout": 15,
+            "statusMessage": "Conferindo se não tem dado pessoal"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": ["-I", "C:/Users/alexa/planner-de-bolso/.claude/hooks/checa_js.py"],
+            "timeout": 30,
+            "statusMessage": "Conferindo o JavaScript do planner"
+          }
+        ]
+      }
+    ]
+  }
+}

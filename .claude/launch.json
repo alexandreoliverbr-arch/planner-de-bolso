@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "planner",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8812", "--bind", "127.0.0.1", "--directory", "docs"],
+      "port": 8812
+    }
+  ]
+}
